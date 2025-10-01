@@ -29,6 +29,7 @@
   border-radius: 0 0 8px 8px;
   border: 2px solid blue;
 }
+
 /* Scrollable blog area */
 .blog-panel {
   grid-column: 1/2;
@@ -57,9 +58,8 @@
 
 .circle-toggle {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, 50%);
+  left: 35%;
+  top: 20%;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -78,7 +78,7 @@
 }
 
 .circle-toggle:hover {
-  transform: translate(-50%, -10%) scale(1.1);
+  transform: translate(-10%, 0%) scale(1);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 
@@ -106,7 +106,13 @@ body.goodies-expanded .goodies-panel {
 body.goodies-expanded .circle-toggle {
   /* Move button to the border between expanded panels */
   /* Adjust based on gap size */
-  top: calc(20% - 300px);
+  top: calc(50% + 10px);
+  /* Reversed Gradient */
+  background: linear-gradient(45deg, #764ba2, #667eea);
+}
+
+body.goodies-expanded .circle-toggle .toggle-icon {
+  transform: rotate(180deg);
 }
 
 #side-panel {

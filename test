@@ -1,0 +1,13 @@
+const rudy = "Hey, I am over here";
+var m = 10;
+
+function moveDirection(m) {
+    
+    for (let i = 0; m > i; i++) {
+        return i++;
+    }
+return moveDirection();
+}
+
+moveDirection(i);
+console.log(rudy);
